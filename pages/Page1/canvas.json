@@ -427,9 +427,6 @@
                   "key": "accentColor"
                 },
                 {
-                  "key": "borderRadius"
-                },
-                {
                   "key": "boxShadow"
                 },
                 {
@@ -496,7 +493,7 @@
                   "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                 }
               },
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "borderRadius": "0px",
               "defaultSelectedRowIndices": [
                 0
               ],
