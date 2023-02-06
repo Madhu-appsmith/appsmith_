@@ -1,0 +1,407 @@
+{
+  "unpublishedPage": {
+    "name": "Page1",
+    "slug": "page1",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 530,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 59,
+          "minHeight": 1292,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "newButtonColor": "#457AE6",
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "isCanvas": false,
+              "iconSVG": "/formbuilderui/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "editedRowIndices": [],
+              "saveButtonColor": "#03B365",
+              "topRow": 19,
+              "pageSize": 10,
+              "type": "TABULATOR_WIDGET",
+              "actionRowWithIndex": {},
+              "animateLoading": false,
+              "dynamicBindingPathList": [
+                {
+                  "key": "primaryColumns.name.computedValue"
+                },
+                {
+                  "key": "primaryColumns.age.computedValue"
+                },
+                {
+                  "key": "primaryColumns.gender.computedValue"
+                },
+                {
+                  "key": "primaryColumns.height.computedValue"
+                },
+                {
+                  "key": "primaryColumns.col.computedValue"
+                },
+                {
+                  "key": "primaryColumns.dob.computedValue"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "childStylesheet.button.buttonColor"
+                },
+                {
+                  "key": "childStylesheet.button.borderRadius"
+                },
+                {
+                  "key": "childStylesheet.menuButton.menuColor"
+                },
+                {
+                  "key": "childStylesheet.menuButton.borderRadius"
+                },
+                {
+                  "key": "childStylesheet.iconButton.buttonColor"
+                },
+                {
+                  "key": "childStylesheet.iconButton.borderRadius"
+                },
+                {
+                  "key": "childStylesheet.editActions.saveButtonColor"
+                },
+                {
+                  "key": "childStylesheet.editActions.saveBorderRadius"
+                },
+                {
+                  "key": "childStylesheet.editActions.discardButtonColor"
+                },
+                {
+                  "key": "childStylesheet.editActions.discardBorderRadius"
+                }
+              ],
+              "leftColumn": 3,
+              "actionRow": {},
+              "selectedRow": [],
+              "resetButton": "Reset",
+              "height": 400,
+              "resizableColumnFit": true,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "dataPersistence": true,
+              "isVisible": true,
+              "fontStyle": "",
+              "version": 1,
+              "textColor": "black",
+              "isLoading": false,
+              "columnType": "text",
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "editedRowsData": [],
+              "widgetName": "Tabulator1",
+              "columnOrder": [
+                "name",
+                "age",
+                "gender",
+                "height",
+                "col",
+                "dob",
+                "customColumn1"
+              ],
+              "editedRows": [],
+              "displayName": "Tabulator",
+              "bottomRow": 47,
+              "parentRowSpace": 10,
+              "groupBy": "",
+              "hideCard": false,
+              "parentColumnSpace": 9.953125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "primaryColumns.customColumn1.onClick"
+                }
+              ],
+              "resetButtonColor": "#B0BFCB",
+              "primaryColumns": {
+                "name": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "name",
+                  "field": "name",
+                  "title": "name",
+                  "headerFilter": true,
+                  "sorter": "string",
+                  "computedValue": "{{Tabulator1.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
+                  "tooltip": true,
+                  "headerTooltip": true,
+                  "textColor": "",
+                  "dateFormat": ""
+                },
+                "age": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "age",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "age",
+                  "field": "age",
+                  "title": "age",
+                  "headerFilter": true,
+                  "sorter": "string",
+                  "computedValue": "{{Tabulator1.sanitizedTableData.map((currentRow) => ( currentRow.age))}}",
+                  "tooltip": true,
+                  "headerTooltip": true,
+                  "textColor": "",
+                  "dateFormat": ""
+                },
+                "gender": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "gender",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "gender",
+                  "field": "gender",
+                  "title": "gender",
+                  "headerFilter": true,
+                  "sorter": "string",
+                  "computedValue": "{{Tabulator1.sanitizedTableData.map((currentRow) => ( currentRow.gender))}}",
+                  "tooltip": true,
+                  "headerTooltip": true,
+                  "textColor": "",
+                  "dateFormat": ""
+                },
+                "height": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "height",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "height",
+                  "field": "height",
+                  "title": "height",
+                  "headerFilter": true,
+                  "sorter": "string",
+                  "computedValue": "{{Tabulator1.sanitizedTableData.map((currentRow) => ( currentRow.height))}}",
+                  "tooltip": true,
+                  "headerTooltip": true,
+                  "textColor": "",
+                  "dateFormat": ""
+                },
+                "col": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "col",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "col",
+                  "field": "col",
+                  "title": "col",
+                  "headerFilter": true,
+                  "sorter": "string",
+                  "computedValue": "{{Tabulator1.sanitizedTableData.map((currentRow) => ( currentRow.col))}}",
+                  "tooltip": true,
+                  "headerTooltip": true,
+                  "textColor": "",
+                  "dateFormat": ""
+                },
+                "dob": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "dob",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "date",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "dob",
+                  "field": "dob",
+                  "title": "dob",
+                  "headerFilter": true,
+                  "sorter": "string",
+                  "computedValue": "{{Tabulator1.sanitizedTableData.map((currentRow) => ( currentRow.dob))}}",
+                  "tooltip": true,
+                  "headerTooltip": true,
+                  "textColor": "",
+                  "dateFormat": ""
+                },
+                "customColumn1": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "customColumn1",
+                  "columnType": "text",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "customColumn1",
+                  "computedValue": "",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF",
+                  "onClick": "{{showAlert('hii')}}",
+                  "title": "customColumn1",
+                  "field": "customColumn1",
+                  "headerFilter": true,
+                  "textColor": "",
+                  "dateFormat": "",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "textSize": "PARAGRAPH"
+                }
+              },
+              "saveButton": "Save",
+              "movableRows": false,
+              "key": "iepatemd90",
+              "derivedColumns": {
+                "customColumn1": {
+                  "index": 6,
+                  "width": 150,
+                  "id": "customColumn1",
+                  "columnType": "text",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "customColumn1",
+                  "computedValue": "",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF",
+                  "onClick": "{{showAlert('hii')}}"
+                }
+              },
+              "isDeprecated": false,
+              "rightColumn": 53,
+              "widgetId": "4cys4o4qg5",
+              "tableData": [
+                {
+                  "name": "Billy Bob",
+                  "age": 12,
+                  "gender": "male",
+                  "height": 95,
+                  "col": "red",
+                  "dob": "14/05/2010"
+                },
+                {
+                  "name": "Jenny Jane",
+                  "age": 42,
+                  "gender": "female",
+                  "height": 142,
+                  "col": "blue",
+                  "dob": "30/07/1954"
+                },
+                {
+                  "name": "Steve McAlistaire",
+                  "age": 35,
+                  "gender": "male",
+                  "height": 176,
+                  "col": "green",
+                  "dob": "04/11/1982"
+                }
+              ],
+              "label": "Data",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "horizontalAlignment": "LEFT",
+              "newButton": "New",
+              "cellBackground": "#FFFFFF",
+              "editedRowIndex": -1
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "validOnPageLoadActions": true,
+        "id": "Page1",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": []
+  },
+  "deleted": false,
+  "gitSyncId": "63b275d3fe5d555a65bd9a98_63b275d3fe5d555a65bd9a9a"
+}
